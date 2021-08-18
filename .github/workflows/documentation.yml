@@ -38,11 +38,12 @@ jobs:
           ssh-private-key: ${{ secrets.GH_PAGES_DEPLOY }}
       - name: Release to GitHub Pages
         env:
+          DEPLOYMENT_BRANCH: gh-pages
           USE_SSH: true
           GIT_USER: git
         run: |
-          git config --global user.email "cable.benjamin@protonmail.com"
-          git config --global user.name "ladydascalie"
+          git config --global user.email "deploy@goflexible.dev"
+          git config --global user.name "deployer"
           if [ -e yarn.lock ]; then
             yarn install --frozen-lockfile
           elif [ -e package-lock.json ]; then

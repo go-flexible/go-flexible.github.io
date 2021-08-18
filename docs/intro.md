@@ -89,6 +89,5 @@ Obviously, this is a contrived example. If this is all you were really building,
 
 However, here's what we've acheived:
 
-We've implemented an http server that flex can run as a [Worker](https://pkg.go.dev/github.com/go-flexible/flex#Worker). This means that the server is running in it's own goroutine, and that graceful shutdown will occur when the context we've passed as the first argument to [MustStart](https://pkg.go.dev/github.com/go-flexible/flex#MustStart).
-
-Generally this boils down to __what happens when complexity grows?__
+We've implemented an http server that flex can run as a [Worker](https://pkg.go.dev/github.com/go-flexible/flex#Worker). This means that the server is running in it's own goroutine, and that graceful shutdown will occur when the context we've passed as the first argument to [MustStart](https://pkg.go.dev/github.com/go-flexible/flex#MustStart) is cancelled.
+This can be done by interrupting the program with `CTRL+c`, or by signalling the application (for example, the way kubernetes would).

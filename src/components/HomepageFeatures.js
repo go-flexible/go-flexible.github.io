@@ -8,6 +8,7 @@ const FeatureList = [
     Svg: require('../../static/img/iana-lettering.svg').default,
     description: (
       <>
+        "My way or the highway!" - Not with flex!<br></br>
         There is no "flex way", continue building your applications the way you
         prefer.
       </>

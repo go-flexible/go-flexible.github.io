@@ -62,7 +62,7 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/go-flexible/go-flexible.github.io/edit/main/',
+            'https://github.com/go-flexible/go-flexible.github.io/edit/documentation/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),

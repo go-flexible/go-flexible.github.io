@@ -2,10 +2,8 @@
 
 ## About
 
-If you noticed the HTTP server we created in the quick start, flexhttp is a more complete implementation.
-
-This of course avoids you having to write your own, but also allows us to provide you with some sane defaults.
-
+If you noticed the HTTP server we created in the quick start, flexhttp is a more complete implementation.  
+This of course avoids you having to write your own, but also allows us to provide you with some sane defaults.  
 If you don't like our defaults, you can pass in your HTTP server with the exact configuration you need!
 
 ## Install

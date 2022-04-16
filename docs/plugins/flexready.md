@@ -29,5 +29,6 @@ readysrv := flexready.New(flexready.Checks{
 // Run it, or better yet, let `flex` run it for you!
 _ = readysrv.Run(context.Background())
 
-// Ready server is now available on http://localhost:9999/ready
+// Liveness endpoint:  http://localhost:9999/live
+// Readiness endpoint: http://localhost:9999/ready
 ```

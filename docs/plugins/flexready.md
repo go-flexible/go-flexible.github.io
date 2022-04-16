@@ -15,6 +15,15 @@ Using `flexready` this can be done easily by configuring an endpoint to serve th
 go get github.com/go-flexible/flexready
 ```
 
+## Configuration
+
+The readiness server can be configured through the environment to match setup in
+the infrastructure.
+
+- `FLEX_READYSRV_ADDR` default: `0.0.0.0:3674`
+- `FLEX_READYSRV_LIVENESS_PATH` default: `/live`
+- `FLEX_READYSRV_READINESS_PATH` default: `/ready`
+
 [![Go Reference](https://pkg.go.dev/badge/github.com/go-flexible/flexready.svg)](https://pkg.go.dev/github.com/go-flexible/flexready)
 
 ## Example

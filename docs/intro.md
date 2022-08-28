@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: flex quickstart
+title: Discover Flex
 ---
 
 # Discover Flex

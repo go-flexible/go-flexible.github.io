@@ -25,7 +25,13 @@ module.exports = {
           type: 'doc',
           docId: 'intro',
           position: 'left',
-          label: 'Quick Start',
+          label: 'Discover Flex',
+        },
+        {
+          type: 'doc',
+          docId: 'install',
+          position: 'left',
+          label: 'Install',
         },
         {
           href: 'https://github.com/go-flexible/flex',
